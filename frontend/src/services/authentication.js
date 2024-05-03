@@ -3,7 +3,7 @@ import axios from "axios";
 export const login = async (body) => {
   try {
     const response = await axios.post(
-      `${import.meta.env.VITE_API_BASE_URL}user/signin`,
+      `${import.meta.env.VITE_API_BASE_URL}/user/signin`,
       body
     );
 
@@ -16,7 +16,7 @@ export const login = async (body) => {
 export const register = async (body) => {
   try {
     const response = await axios.post(
-      `${import.meta.env.VITE_API_BASE_URL}user/signup`,
+      `${import.meta.env.VITE_API_BASE_URL}/user/signup`,
       body
     );
 
