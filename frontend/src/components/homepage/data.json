@@ -1,0 +1,33 @@
+{
+  "photos": [
+    {
+      "id": 424926,
+      "img_src": "/homepage/home1.webp",
+      "title": "Discover innovative ways to decorate"
+    },
+    {
+      "id": 424927,
+
+      "img_src": "/homepage/home2.webp",
+      "title": "We are available all across the globe for your cosmic journey "
+    },
+    {
+      "id": 424928,
+
+      "img_src": "/homepage/home3.webp",
+      "title": "Find new ways to connect with the stars"
+    },
+    {
+      "id": 424929,
+
+      "img_src": "/homepage/home4.webp",
+      "title": "Our vision is to make your dream home"
+    },
+    {
+      "id": 424930,
+
+      "img_src": "/homepage/home5.webp",
+      "title": "We are available all across the globe"
+    }
+  ]
+}
