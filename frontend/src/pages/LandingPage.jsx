@@ -13,6 +13,17 @@ const LandingPage = () => {
   const toRotate = ["Astrophile"];
   const toRotate2 = ["Get Start"];
   const period = 700;
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.getItem("authToken")) {
+      setIsLoading(true);
+      setTimeout(() => {
+        window.location = "/home";
+        setIsLoading(false);
+      }, 2000);
+    }
+  }, []);
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -74,10 +85,7 @@ const LandingPage = () => {
     window.location = "/login";
   };
   return (
-    <div
-      className={"Banner h-screen grid grid-cols-1 gap-3 md:grid-cols-2  "}
-      id="home"
-    >
+    <div className={"banner grid grid-cols-1 gap-3 md:grid-cols-2  "} id="home">
       <Container>
         <div className="flex flex-col items-center justify-center h-full">
           <div>
@@ -95,12 +103,13 @@ const LandingPage = () => {
             color="primary"
             radius="lg"
             onClick={handleScroll}
+            isLoading={isLoading}
           >
             {text2}
           </Button>
         </div>
       </Container>
-      <Container>
+      <Container className="order-first md:order-last ">
         <div className="aligh-items-center">
           <div>
             <TrackVisibility>
