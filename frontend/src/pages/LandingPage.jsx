@@ -75,7 +75,7 @@ const LandingPage = () => {
   };
   return (
     <div
-      className={" h-screen grid grid-cols-1 gap-3 md:grid-cols-2  "}
+      className={"Banner h-screen grid grid-cols-1 gap-3 md:grid-cols-2  "}
       id="home"
     >
       <Container>
