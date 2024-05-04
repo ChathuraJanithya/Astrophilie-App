@@ -61,7 +61,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const router = useLocation();
 
-  const routerPath = router?.pathname === "/" ? true : false;
+  const routerPath = router?.pathname === "/home" ? true : false;
 
   const handleLogout = () => {
     localStorage.removeItem("authToken");

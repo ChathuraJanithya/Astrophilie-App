@@ -1,0 +1,5 @@
+{
+  "orgId": "team_EQbcB7IdlSNfDvXtWDsrHjyr",
+  "projectId": "prj_7CZGdIcA4V3BgMMjezSOxqhlRoNU",
+  "routes": [{ "handle": "filesystem" }, { "src": "/.*", "dest": "/" }]
+}
