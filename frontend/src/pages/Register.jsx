@@ -31,7 +31,7 @@ const Register = () => {
   const mutation = useMutation({
     mutationFn: register,
     onSuccess: () => {
-      window.location = "/";
+      window.location = "/login";
     },
     onError: (error) => {
       setCheckError(error);

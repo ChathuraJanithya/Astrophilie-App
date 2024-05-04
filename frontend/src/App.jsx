@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Mars from "./pages/Mars";
 import { ToastContainer } from "react-toastify";
+import LandingPage from "./pages/LandingPage";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
         <ToastContainer />
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/home" element={<Home />} />
             <Route path="/register" element={<Register />} />
             <Route path="/mars" element={<Mars />} />

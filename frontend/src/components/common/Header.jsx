@@ -66,7 +66,7 @@ export default function Header() {
   const handleLogout = () => {
     localStorage.removeItem("authToken");
     localStorage.removeItem("userData");
-    window.location = "/";
+    window.location = "/login";
   };
 
   const scrollToSection = (id) => {
