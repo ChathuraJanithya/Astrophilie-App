@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { Button } from "@nextui-org/react";
 
 const LandingPage = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -70,8 +71,7 @@ const LandingPage = () => {
   };
 
   const handleScroll = () => {
-    setIsLoginVisible(true);
-    document.getElementById("login").scrollIntoView({ behavior: "smooth" });
+    window.location = "/login";
   };
   return (
     <div
@@ -95,7 +95,6 @@ const LandingPage = () => {
             color="primary"
             radius="lg"
             onClick={handleScroll}
-            isLoading={isLoading}
           >
             {text2}
           </Button>
