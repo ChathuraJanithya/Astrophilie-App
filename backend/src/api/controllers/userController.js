@@ -61,7 +61,7 @@ const signin = async (req, res) => {
     const token = jwt.sign(
       { email: existingUser.email, id: existingUser._id },
       SECRET_KEY,
-      { expiresIn: "1d" }
+      { expiresIn: "1h" }
     );
 
     res.status(201).json({ result: existingUser, token });
