@@ -14,7 +14,7 @@ const Banner = () => {
     });
 
   const planetData = data;
-
+  console.log(planetData);
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -59,12 +59,26 @@ const Banner = () => {
               <div className="rounded-lg h-36 bg-default-300"></div>
             </Skeleton>
           ) : (
-            <div className="relative max-w-lg rounded-md max-h-sm">
-              <img
-                src={planetData?.url}
-                alt="hdurl"
-                className="object-cover w-full h-full rounded-md inset-1"
-              />
+            <div
+              className={
+                planetData?.media_type === "video"
+                  ? "w-full px-2"
+                  : "relative max-w-lg rounded-md max-h-sm"
+              }
+            >
+              {planetData?.media_type === "video" ? (
+                <iframe
+                  src={planetData?.url}
+                  title="video"
+                  className="w-full h-full rounded-md "
+                ></iframe>
+              ) : (
+                <img
+                  src={planetData?.url}
+                  alt="hdurl"
+                  className="object-cover w-full h-full rounded-md inset-1"
+                />
+              )}
             </div>
           )}
         </motion.div>
