@@ -99,7 +99,7 @@ const Mars = () => {
           breadcrumbs={[
             {
               title: "Home",
-              link: "/",
+              link: "/home",
             },
             {
               title: "Mars",
