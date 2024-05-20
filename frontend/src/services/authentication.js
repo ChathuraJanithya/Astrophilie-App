@@ -16,7 +16,7 @@ export const login = async (body) => {
 export const register = async (body) => {
   try {
     const response = await axios.post(
-      `https://astrophilie-app-production.up.railway.app/user/signup`,
+      `https://astrophilie-app.onrender.com/user/signup`,
       body
     );
 
