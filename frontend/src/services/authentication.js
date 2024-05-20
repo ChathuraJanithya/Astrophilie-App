@@ -3,7 +3,7 @@ import axios from "axios";
 export const login = async (body) => {
   try {
     const response = await axios.post(
-      `https://astrophilie-app-production.up.railway.app/user/signin`,
+      `https://astrophilie-app.onrender.com/user/signin`,
       body
     );
 
